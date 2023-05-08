@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 + ul{
+            font-style: italic;
+        }
+        li ~ li{
+            font-weight: bold;
+        }
+        *{
+            border: 2px dotted black;
+        }
+        h1, h3{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listy</h1>
+    <ul>
+        <li>
+            <h3>jabłka</h3>
+            <ul>
+                <li>Champion</li>
+                <li>Ligol</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Cytrusy</h3>
+            <ul>
+                <li>Pomarańcza</li>
+                <li>Cytryna</li>
+                <li>Limonka</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

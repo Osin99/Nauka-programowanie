@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article:first-child{
+            color: red;
+        }
+        article:last-child{
+            color: blue;
+        }
+        article:nth-child(even){
+            font-weight: bold;
+        }
+        article:nth-child(odd){
+            font-style: italic;
+        }
+        article:not(.news){
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nesciunt!</p></article>
+        <article class="news"><p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nesciunt!</p></article>
+        <article><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nesciunt!</p></article>
+        <article><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nesciunt!</p></article>
+        <article><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nesciunt!</p></article>
+        <article><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nesciunt!</p></article>
+        <article><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nesciunt!</p></article>
+        <article><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nesciunt!</p></article>
+        <article><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nesciunt!</p></article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [href = "home.html"  i]{
+            background-color: red;
+        }
+        a[data-link]{
+            background-color: green;
+        }
+        [class *= "bold" i]{
+            font-weight: bold;
+            border: 2px solid black;
+        }
+        [class *= "small" i]{
+            font-size: 10px;
+        }
+        [class ^= "red"]{
+            font-size: 26px;
+        }
+        [class $= "italic" i]{
+            font-style: italic;
+        }
+        [class |= "orange"]{
+            border: 4px dotted orange;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="red-link" href="home.html">Home</a></li>
+        <li><a data-link="bold-link" class="orange" href="about.html">about</a></li>
+        <li><a href="tos.html" class="small-text bold italic">tos</a></li>
+    </ul>
+</body>
+</html>

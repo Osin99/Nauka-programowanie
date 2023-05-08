@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="new_article.php" method="POST">
+        <fieldset>
+            <legend>Formularz wysyłki atrykułu na bloga</legend>
+
+                <p>
+                   <label for="title">Tytuł artykuły</label> 
+                   <input type="text" id="title" name="title">
+                </p>
+                <p>
+                    <label for="content">Treść</label><br>
+                    <textarea name="content" id="content" cols="50" rows="4"></textarea>
+                </p>
+                <p>
+                    <label for="data_publikacji">Data publikacji:</label>
+                    <input type="datetime-local" name="data_publikacji" id="data_publikacji">
+                </p>
+                <p>
+                    <h4>Wybierz jaki ma być to typ publikacji</h4> <br>
+                    <label for="news">News</label>
+                    <input type="radio" name="type", id="news" value="news">
+                    <label for="artykuł">Artykuł</label>
+                    <input type="radio" name="type", id="artykuł" value="artykuł">
+                    <label for="Recencja">Recencja</label>
+                    <input type="radio" name="type", id="Recencja" value="Recencja">
+                </p>
+                <p>
+                    <h3>Tagi:</h3>
+                    <label for="lifestyle">Lifestyle</label>
+                    <input type="checkbox" name="lifestyle" id="lifestyle"><br>
+                    <label for="Traveling">Podróże</label>
+                    <input type="checkbox" name="Traveling" id="Traveling">
+
+                </p>
+                <p>
+                    <h3>Wybierz kategorie:</h3>
+                    <select name="category" id="category">
+                        <option value="kategoria1">kategoria1</option>
+                        <option value="kategoria2">kategoria2</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Wyślij formularz</button>
+                    <button type="reset">zresetuj</button>
+                </p>
+
+
+        </fieldset>
+
+
+    </form>
+</body>
+</html>

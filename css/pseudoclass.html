@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 20px;
+            color: darkred;
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+        ::selection{
+            color: red;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li::before{
+            content: "🡘" ;
+        }
+        .best::before{
+            content:"↪" ;
+        }
+        li::after{
+            content: "!";
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>jeden</li>
+        <li class="best">dwa</li>
+        <li>trzy</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores.</p>
+</body>
+</html>

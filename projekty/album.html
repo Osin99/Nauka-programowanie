@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Zdjęć</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row; /*Column*/
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .img-box{
+            margin: 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .img-box:hover{
+            transform: scale(1.07);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="img-box">
+            <img src="https://cdn.pixabay.com/photo/2023/04/17/15/45/comma-7932755_640.jpg" alt="">
+            <div>TEST</div>
+        </div>
+        <div class="img-box">
+            <img src="https://cdn.pixabay.com/photo/2023/03/29/08/19/tulips-7884877_640.jpg" alt="">
+            <div>TEST</div>
+        </div>
+        <div class="img-box">
+            <img src="https://cdn.pixabay.com/photo/2023/03/24/03/18/boy-7873231_640.jpg" alt="">
+            <div>TEST</div>
+        </div>
+        <div class="img-box">
+            <img src="https://cdn.pixabay.com/photo/2023/04/21/13/08/tulip-7941895__340.jpg" alt="">
+            <div>TEST</div>
+        </div>
+        <div class="img-box">
+            <img src="https://cdn.pixabay.com/photo/2023/03/19/07/34/car-7862030__340.jpg" alt="">
+            <div>TEST</div>
+        </div>
+    </div>
+
+</body>
+</html>

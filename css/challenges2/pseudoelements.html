@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::selection{
+            background-color: orange;
+        }
+        article::first-letter{
+            font-weight: bold ;
+        }
+        article::first-line{
+            text-decoration: underline;
+        }
+        article::before{
+            content: "@";
+            border: 2px solid black
+        }
+        article:last-child::after{
+            content: "HOT";
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur tempora nam tempore suscipit officiis itaque, sequi laboriosam. Ipsa officia cum recusandae, vel vero voluptatem aliquam eum nisi ratione? Tempore.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur tempora nam tempore suscipit officiis itaque, sequi laboriosam. Ipsa officia cum recusandae, vel vero voluptatem aliquam eum nisi ratione? Tempore.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur tempora nam tempore suscipit officiis itaque, sequi laboriosam. Ipsa officia cum recusandae, vel vero voluptatem aliquam eum nisi ratione? Tempore.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur tempora nam tempore suscipit officiis itaque, sequi laboriosam. Ipsa officia cum recusandae, vel vero voluptatem aliquam eum nisi ratione? Tempore.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur tempora nam tempore suscipit officiis itaque, sequi laboriosam. Ipsa officia cum recusandae, vel vero voluptatem aliquam eum nisi ratione? Tempore.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur tempora nam tempore suscipit officiis itaque, sequi laboriosam. Ipsa officia cum recusandae, vel vero voluptatem aliquam eum nisi ratione? Tempore.</article>
+    </div>
+</body>
+</html>
