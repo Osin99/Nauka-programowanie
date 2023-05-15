@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //Zamiana godzin i minut na sekundy
+        let hours = 3;
+        let minutes = 25
+
+        function convertToSecend(hours, minutes){
+            let resultMinustes = hours*60 
+            let result = (resultMinustes*60) + (minutes * 60)
+
+            return result
+        }
+        let zmianaGodzinNaSekundy = convertToSecend(hours, minutes)
+        console.log(hours +","+minutes ,"=", zmianaGodzinNaSekundy,"sekund")
+
+        //zamiana minut na godziny
+
+        let minutes2 = 120
+
+        function convertToHours(minutes){
+            let result = minutes2/60;
+            return result;
+        }
+        let zmianaNaGodziny = convertToHours(minutes)
+        console.log(minutes2+" minut to: "+convertToHours(minutes2)+" godzin")
+
+
+
+
+    </script>
+    
+</body>
+</html>

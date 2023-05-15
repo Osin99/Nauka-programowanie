@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let monthNumber = 10;
+        let season = "";
+
+        switch(monthNumber){
+            case 3:
+            case 4:
+            case 5:
+                season = "Wiosna"
+                break;
+            case 6:
+            case 7:
+            case 8:
+                season="Lato"
+                break;
+            case 9:
+            case 10:
+            case 11:
+                season = "Jesień"
+                break;
+            case 12:
+            case 1:
+            case 2:
+                season="Zima"
+                break
+        }
+        console.log('Numer miesiąca'+monthNumber+"tekst wskazuje na "+ season)
+    </script>
+    
+</body>
+</html>
