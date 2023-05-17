@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Wprowadz liczbę całkowitą: ")
+        console.log(typeof a)
+        
+        a = Number.parseInt(a)
+        console.log(typeof a)
+
+        function calculateSquareArea (height){
+            return Math.pow(height,2)
+        }
+
+        let pole = calculateSquareArea(a)
+        console.log(pole)
+
+
+        let b = prompt("Podaj liczbę zmiennoprzecinkową: ")
+
+        function poleKwadratu(b){
+            b = Number.parseFloat(b)
+            let pole = Math.pow(b,2)
+            return pole
+        }
+        let poleZmienne = poleKwadratu(b)
+        console.log(poleZmienne.toFixed(2))
+
+        let decimalNum = prompt("xDDDDD")
+        decimalNum = Number.parseFloat(decimalNum)
+        pole = calculateSquareArea(decimalNum)
+        console.log(pole)
+
+
+    </script>
+</body>
+</html>

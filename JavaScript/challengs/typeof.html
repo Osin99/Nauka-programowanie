@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createUser(name, contact){
+            let user = {
+                username: name,
+                surname: "Kowlaski",
+                email: "@exmaple",
+                phone:"502-123-543"
+            }
+            if(typeof contact == "string"){
+                user.email = contact;
+                
+            }else if(typeof contact =="number"){
+                user.phone = contact;
+                
+            }
+            return user
+
+
+
+            }
+            let string = createUser("Ola","ola@example.com")
+            let number = createUser("Kasia",8943828384)
+
+            console.log(string)
+            console.log(number)
+            
+        
+    </script>
+    
+</body>
+</html>

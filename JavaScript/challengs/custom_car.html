@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function makeCar(model, color, topSpeed){
+            let car = {
+                model: model,
+                color: color,
+                topSpeed: topSpeed,
+                manuFacturer: {
+                    name: "dodge",
+                    country:"USA"
+                }
+            }
+            return car
+        }
+        let car1 = makeCar("Viper", "blue", 290)
+        let car2 = makeCar("Ram", "red", 240)
+        console.log(car1)
+        console.log(car2)
+    </script>
+    
+</body>
+</html>

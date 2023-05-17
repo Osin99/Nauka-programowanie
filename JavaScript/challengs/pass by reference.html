@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let employee = {
+            name: "Marek",
+            email: "marek@example.com",
+            rank: "programmer",
+            salary: 8000
+        }
+
+        function promoteToManager (user){
+            
+            if (user.rank == "Manager"){
+                console.log("Pracownik jest już Managerem")
+                return;
+            }else{
+                user.salary = user.salary +(user.salary * 0.5)
+                user.rank = "Manager"
+                return console.log("Stanowisko zostało zmienione na Manager")
+            }
+            
+        }
+        promoteToManager(employee);
+        console.log(employee)
+
+
+
+
+    </script>
+    
+</body>
+</html>

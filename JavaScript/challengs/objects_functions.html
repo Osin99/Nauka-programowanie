@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function generateUser(name, email, city, job) {
+            let user = {
+                name: name,
+                email: email,
+                city: city,
+                jobDescription: job
+            }
+            return user;
+        }
+        let createUser = generateUser("Ola", "ola@example.com", "Warszawa", "Programistka")
+        console.log(createUser)
+    </script>
+    
+</body>
+</html>
