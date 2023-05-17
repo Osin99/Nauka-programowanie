@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-sizing:border-box;
+    /* outline: 1px dotted green; */
+}
+header{
+    width: 100%;
+    margin: 2px 0px 2px 0;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0 10px 10px -2px rgb(188, 11, 194);
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    color:whitesmoke;
+}
+
+main{
+margin-top: 20px;
+    width:75vw;
+}
+.menu{
+    height: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    display:flex;
+    float: left;
+    justify-content:start;
+    align-items: start;
+    color: white;
+}
+
+.menu ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(188, 11, 194);
+    border-radius: 10px;
+    
+}
+.menu ul li a:hover{
+    animation-name: scaling;
+    animation-duration: 1.5s;
+    animation-iteration-count:calc(1);
+    color: red;
+
+}
+@keyframes scaling{
+    0%{transform:scale(1); }
+    50%{transform: scale(1.25);}
+    100%{transform: scale(1);}
+}
+.chest{
+    margin: 10px 0 10px 0;
+    padding: 10px 0;
+}
+.back{
+    margin: 10px 0 10px 0;
+    padding: 10px 0;
+}
+.legs{
+    margin: 10px 0 10px 0;
+    padding: 10px 0;
+}
+.photo-abs{
+
+    min-height: 80vh;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.photo-abs img{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    
+}
+.cite{
+    background-color: none;
+    position:relative;
+    top: 30vh;
+    right: 30vw;
+    left:0vw;
+    width: 90vw;
+    height: 15vh;
+    margin: 0;
+    padding: 5px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cite .cite-motivation{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    line-break:strict;
+    text-align: center;
+}
