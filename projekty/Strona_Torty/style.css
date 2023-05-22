@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    /* border: 1px dotted black; */
+    scroll-behavior:smooth;
+    /* outline: red dotted; */
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0px 9px 16px 8px rgba(237, 84, 133, 1);
+    overflow: hidden;
+}
+
+
+.logo{
+    margin: 0px 10px 10px 10px;
+    padding: 0px 10px;
+    height: 10vh;
+    width: 20%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    transform: scale(2.5);
+}
+nav{
+height:inherit ;
+}
+.menu{
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+
+}
+.menu ul, li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    border:2px solid black;
+    border-radius: 40px 7px 50px 40px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #fffbcb 0%, #ED5485 33%);
+    
+}
+
+.menu ul, li, a{
+    width: 10vw;
+    text-decoration: none;
+    font-weight: 0;
+    color: #FFFBCB ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
+}
+li:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    -webkit-box-shadow: 0px 0px 25px 1px rgba(237, 84, 133, 1);
+    -moz-box-shadow: 0px 0px 25px 1px rgba(237, 84, 133, 1);
+    box-shadow: 0px 0px 25px 1px rgba(237, 84, 133, 1);
+}
+.break{
+    position: relative;
+    background: url(cake-break.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 15px 0 0 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+
+}
+#call-me{
+    position: absolute;
+    top: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    width: 15vw;
+    height: auto;
+    color: #fffbcb;
+    background-color: #6EA5CC;
+    border: 1px solid black;
+    border-radius: 20px 20px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    flex-wrap: wrap;
+
+}
+.about-me{
+    background: linear-gradient(90deg, #fffbcb 0%, #ED5485 66%);
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    text-anchor:start;
+    scroll-behavior:smooth;
+
+}
+.text{
+    display:grid;
+    
+}
+.title-about{
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#9C4298;
+}
+p{
+    margin: 5px 0px 0px 0px ;
+    padding: 10px 0px 0px 0px;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color:#9C4298;
+
+
+    
+}
+.photo{
+    width: 100%;
+}
+.photo img{
+    margin: 5px 5px;
+    padding: 10px 10px;
+    width: 100%;
+}
+
