@@ -1,0 +1,46 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@400;500;700&display=swap');
+
+
+html{
+    background-color: white;
+    font-family: "Monserrat",Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.about{
+ background: rgb(107,232,242);
+ background: linear-gradient(90deg, rgba(107,232,242,0) 0%, rgba(128,232,249,1) 47%);
+ border-radius: 40px;
+ width: 70%;
+ height: 85vh;
+ float:left;
+
+}
+h1{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 20vh 0px 0px 10vw;
+    margin: 15px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.definition-bmi{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 100px;
+    font-family: "Montserrat",Arial, Helvetica, sans-serif;
+    letter-spacing: 1.1px;
+    word-spacing: 1.8px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0px 0px 0px 11vw;
+    
+}
