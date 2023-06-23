@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let intervalId = null;
+        window.addEventListener("load", function(event){
+            console.log("Program rozpoczął swoje działanie")
+            intervalId = setInterval(function(){
+                console.log(window.innerHeight, window.innerWidth)
+            }, 1000)
+        })
+
+
+        window.setInterval(intervalId);{
+            console.log(innerHeight, innerWidth)
+        }
+
+        window.addEventListener("focus", function(event){
+            console.log("przeglądarka uzyskała focus")
+        });
+
+        window.onblur= function(even){
+            clearInterval(intervalId)
+        }
+
+        
+        
+
+    </script>
+    
+</body>
+</html>

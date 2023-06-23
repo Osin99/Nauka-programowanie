@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="JS" href="app.js">
     <title>Twoje BMI</title>
 </head>
 <body>
@@ -17,8 +16,24 @@
                  Jest to powszechnie stosowany wskaźnik używany do oceny proporcji masy ciała względem wzrostu.
             </p>
         </div>
-        <div class="app">1234</div>
+        <div class="app">
+            
+            <div class="miara">
+                <input type="radio" id="cm">
+                <p for="cm">Europejski<p/>
+                <input type="Radio" id="cm">
+                <p for="cm">Imperial</p>
+            </div>
+            <div class="valueAdded">
+                <input type="number" id="wzrost">
+                    <label for="wzrost">Wzrost</label>
+                <input type="number" id="Waga">
+                    <label for="wzrost">Waga</label>
+            </div>
+            <button type="submit" id="Oblicz">Oblicz moje BMI</button>
+            <div class="result" id="testowe"><p>asdasd</p></div>
+        </div>
     </header>
-    
+  <script src="app.js"></script>
 </body>
 </html>
