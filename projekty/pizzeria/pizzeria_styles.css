@@ -156,3 +156,8 @@ body{
     background-color: black;
     font-family: Cookie, cursive;
 }
+
+
+.menu_one_forth img:hover{
+    transform: scale(1.2);
+}
