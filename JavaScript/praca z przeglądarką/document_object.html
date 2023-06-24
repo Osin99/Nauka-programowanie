@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li class="menu-item current-page">home</li>
+        <li class="menu-item">projects</li>
+        <li class="menu-item">contact</li>
+    </ul>
+
+    <article id="news">
+        <p>Lorem ipsum dolor sit.</p>
+    </article>
+
+
+    <script>
+        let currentPage = document.querySelector("li.current-page");
+        console.log(currentPage)
+        
+        
+        //currentPage.style.fontWeight = "bold"
+
+
+        let menuItems = document.querySelectorAll("li.manu-item")
+        let newCurrentPage = menuItems[1];
+        console.log(currentPage.classList)
+        currentPage.classList.remove("current-page")
+
+        let article = document.getElementById("news")
+        let h1 = document.createElement("h1");
+        h1.innerHTML = "Latest news"
+
+        article.prepend(h1)
+
+        let liItems = document.getElementsByTagName("li")
+        for(let i=0; i<liItems.length;i++){
+            let li = liItems[i];
+            li.innerHTML += "#" +i
+        }
+    </script>
+    
+</body>
+</html>
