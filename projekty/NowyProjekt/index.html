@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                
+                <li id="money"><a href="#"> Przelicznik Walut</a></li>
+                <li id="weather"><a href="#">Pogoda</a></li>
+                <li id="color"><a href="#">Zmiana Koloru Strony</a></li>
+                <li id="calc"><a href="#">Kalkulator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="containerToConvert">
+            <div class="title-converter">
+                <h1>Przelicznik zł na euro</h1>
+            </div>
+            <div class="converter">
+                <h2>Podaj kwotę:&nbsp;</h2>
+                <input type="number" id="zloty">
+                <label for="zloty">&nbsp;zł</label>  
+            </div>
+            <button type="submit" id="przeliczBtn">Przelicz</button>
+            <div class="resultSection"> 10zł to 3 &euro;
+            </div>
+        </section>
+    </main>
+    <script src="colorChange.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
