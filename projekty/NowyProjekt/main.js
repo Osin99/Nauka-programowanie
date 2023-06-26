@@ -36,12 +36,6 @@ function showCalculatorSection(){
     calculatorSection.style.display = 'block'
 }
 
-function zlIntoEuro(){
-    
-    let wynik =  parseFloat(inputZloty) * 4.5
-
-    resultSection.innerHTML = inputZloty+'zł jest równe'+wynik+'&euro;'
-}
 
 
 
@@ -56,3 +50,35 @@ przeliczBtn.addEventListener('click', zlIntoEuro)
 //ukryj wszystkie sekcje na starcie strony (po załadowaniu)
 
 hideAllSections();
+
+//Oblicznie euro na podstawie zł podanych w input
+
+function zlIntoEuro(){
+    if(inputZloty.value === ""){
+        resultSection.innerHTML = 'Podałeś złą wartość początkową'
+    }else if(inputZloty.value === "0"){
+        resultSection.innerHTML = '0 = 0'
+    }else{
+    let wynik =  parseFloat(inputZloty.value) / 4.5
+
+    resultSection.innerHTML = inputZloty.value + ' zł jest równe' + wynik + '&euro;'
+}}
+
+//Zmiana koloru strony 
+
+//Uchwycenie 
+
+const background = document.getElementsByTagName('html')
+const changeColorBtn = document.getElementById('changeColorBtn')
+
+//nasłuchiwanie
+
+changeColorBtn.addEventListener('click', chooseColor)
+//funkcja
+
+function chooseColor(){
+
+}
+function changeColor(){
+    
+}
