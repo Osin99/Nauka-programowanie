@@ -67,18 +67,49 @@ function zlIntoEuro(){
 //Zmiana koloru strony 
 
 //Uchwycenie 
-
-const background = document.getElementsByTagName('html')
+const colorSelect = document.querySelectorAll('.color-change-list')
 const changeColorBtn = document.getElementById('changeColorBtn')
+const colorBtn = document.querySelectorAll('.colorBtn')
+const background = document.getElementsByTagName('body')
 
-//nasłuchiwanie
 
+//nasłuchiwani
 changeColorBtn.addEventListener('click', chooseColor)
+colorBtn.forEach(btn=>{
+    btn.addEventListener('click', (event)=>{
+        const clickedButton = event.target
+        const color = clickedButton.textContent
+        changeColor(color)
+    })
+})
+
+
 //funkcja
-
 function chooseColor(){
+   colorSelect.forEach(element => {
+        if(element.style.display === 'block'){
+            element.style.display = 'none'
+        }else{
+            element.style.display='block'
+        }
+        
+   });
+}
 
-}
-function changeColor(){
+function changeColor(color){
     
+        if(color ==='Green'){
+            document.body.style.backgroundColor = 'green',document.body.style.color = 'black'
+        }
+        else if(color ==='Red'){
+            document.body.style.backgroundColor = 'red', document.body.style.color = 'black'
+        }
+        else if(color ==='Black'){
+            document.body.style.backgroundColor = 'black', document.body.style.color = 'white'
+        }
+        else if(color ==='Yellow'){
+            document.body.style.backgroundColor = 'yellow',document.body.style.color = 'black'
+        }
 }
+
+
