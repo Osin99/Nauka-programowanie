@@ -16,10 +16,24 @@
                 <li id="weather"><a href="#">Pogoda</a></li>
                 <li id="color"><a href="#">Zmiana Koloru Strony</a></li>
                 <li id="calc"><a href="#">Kalkulator</a></li>
+                <li id="startSection"><a href="#">Strona Główna</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="startView">
+            <div class="info">
+                    <div class="AppTitle"><p>Na Stronie Znajdziesz</p></div>
+                    <hr>
+                    <ul>
+                        <li class="appNames"><p>Przelicznik Walut</p></li>
+                         <li class="appNames"><p>Pogoda</p></li>
+                        <li class="appNames"><p>Zmiana Koloru Strony</p></li>
+                        <li class="appNames"><p>Kalkulator</p></li>
+                    </ul>
+                </div>
+            
+        </section>
         <section class="containerToConvert">
             <div class="title-converter">
                 <h1>Przelicznik zł na euro</h1>
@@ -32,6 +46,7 @@
             <button type="submit" id="przeliczBtn">Przelicz</button>
             <div class="resultSection"> 10zł to 3 &euro;
             </div>
+        
         </section>
 
         <section class="weather">
@@ -49,6 +64,7 @@
                             <p class="color-change-list"><button class="colorBtn">Red</button></p>
                             <p class="color-change-list"><button class="colorBtn">Black</button></p>
                             <p class="color-change-list"><button class="colorBtn">Yellow</button></p>
+                            <p class="color-change-list"><button class="colorBtn">White</button></p>
                         </div>
                     </div>
                     
@@ -57,10 +73,39 @@
             </div>
         </section>
         <section class="calculatorApp">
-            <p>asda000000000sdasdadasd</p>
+            <div class="appTitle"><p>Kalkulator</p></div>
+            <div class="app">
+                <div class="display">
+                    <div class="previousNumber"></div>
+                    <div class="mathSign"></div>
+                    <div class="currentNumber"></div>
+                </div>
+                <div class="keyboard">
+                    <button class="clear">C</button>
+                    <button class="operator">%</button>
+                    <button class="operator">-</button>
+                    <button class="operator">+</button>
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator">*</button>
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    
+                    <button class="number">1</button> 
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="number">.</button>
+                    <button class="number">0</button>
+                    <button class="number">00</button>
+                    
+                    <button class="equalSign">=</button>
+                </div>
+            </div>
         </section>
     </main>
-    <script src="colorChange.js"></script>
+    <script src="calculator.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
